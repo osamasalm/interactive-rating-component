@@ -1,0 +1,127 @@
+:root {
+    --clr-primary-orange: hsl(25, 97%, 53%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-LightGrey: hsl(217, 12%, 63%);
+    --clr-neutral-mediumGrey: hsl(216, 12%, 54%);
+    --clr-neutral-darkBlue: hsl(213, 19%, 18%);
+    --clr-neutral-veryDarkBlue: hsl(216, 12%, 8%);
+
+    --fnt-primary: 'Overpass', sans-serif;
+}
+
+body {
+    font-family: var(--fnt-primary);
+    background-color: var(--clr-neutral-veryDarkBlue);
+    color: var(--clr-neutral-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+.rating-state,
+.thank-state {
+    background-color: var(--clr-neutral-darkBlue);
+    width: 380px;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.rating-state img {
+    background-color: rgba(30, 36, 42, 0.6);
+    padding: 15px;
+    border-radius: 30px;
+    overflow: visible;
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--clr-neutral-mediumGrey);
+}
+
+.active {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.active:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+
+li {
+    background-color: rgba(30, 36, 42, 0.6);
+    padding: 18px;
+    width: 20px;
+    border-radius: 30px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--clr-neutral-mediumGrey);
+    font-weight: bold;
+    transition-duration: 300ms;
+}
+
+li:hover {
+    background-color: var(--clr-neutral-LightGrey);
+    color: var(--clr-neutral-white);
+    transition-duration: 500ms;
+}
+
+button {
+    width: 100%;
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-neutral-white);
+    border: none;
+    padding: 15px;
+    font-family: var(--fnt-primary);
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition-duration: 300ms;
+}
+
+button:hover {
+    background-color: var(--clr-neutral-white);
+    color: var(--clr-primary-orange);
+    transition-duration: 500ms;
+}
+
+.thank-state {
+    text-align: center;
+    padding-top: 35px;
+    display: none;
+}
+
+.thank-par {
+    margin: 0 10px 10px 10px;
+}
+
+.rate {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgba(30, 36, 42, 0.6);
+    color: var(--clr-primary-orange);
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+}
