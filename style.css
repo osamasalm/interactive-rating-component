@@ -125,3 +125,31 @@ button:hover {
     padding: 10px;
     border-radius: 20px;
 }
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 70%;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    ul {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    html {
+        font-size: 50%;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    ul {
+        gap: 5px;
+    }
+}
